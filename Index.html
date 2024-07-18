@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Template</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <style>
+        .FlexContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            width: 100%;
+            background-color: white;
+            height: 97vh;
+            overflow: auto;
+            flex-direction: row;
+        }
+
+        .modal {
+            width: 40%;
+            height: 400px;
+            margin: 5px;
+            background-color: white;
+        }
+
+        .title {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            background-color: blue;
+
+        }
+
+        .title .texto {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            width: 80%;
+            flex-direction: row;
+        }
+
+        .title .botones {
+            display: flex;
+
+            justify-content: flex-end;
+            align-items: flex-start;
+            align-content: flex-start;
+            width: 20%;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="FlexContainer">
+        <div class="modal">
+            <div class="title">
+                <div class="texto">
+                    <label>Crear productos</label>
+                </div>
+                <div class="botones">
+                    <button>X</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
