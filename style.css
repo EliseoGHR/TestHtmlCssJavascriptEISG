@@ -1,0 +1,85 @@
+.button2 {
+    color: white;
+    background-color: blue;
+}
+
+.button3 {
+    color: white;
+    background-color: green;
+}
+
+.button4 {
+    color: white;
+    background-color: red;
+}
+
+#txtApellidoEISG {
+    background-color: cadetblue;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row>div {
+    margin-bottom: 10px;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+
+    height: 97vh;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.modal {
+    width: 40%;
+    height: 400px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+
+}
+
+.title .texto {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 80%;
+    flex-direction: row;
+}
+
+.title .botones {
+    display: flex;
+    border-radius: 60%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 20%;
+    flex-direction: row;
+}
+
+.controlor {
+    display: flex;
+    flex-direction: column;
+}
+
+.divEISG {
+    display: flex;
+    gap: 10px;
+}

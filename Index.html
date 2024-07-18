@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>CSS Template</title>
-    <link rel="stylesheet" href="./styles.css" type="text/css" />
-    <style>
-        .FlexContainer {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            align-content: flex-start;
-            width: 100%;
-            background-color: white;
-            height: 97vh;
-            overflow: auto;
-            flex-direction: row;
-        }
-
-        .modal {
-            width: 40%;
-            height: 400px;
-            margin: 5px;
-            background-color: white;
-        }
-
-        .title {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            background-color: blue;
-
-        }
-
-        .title .texto {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: flex-start;
-            align-content: flex-start;
-            width: 80%;
-            flex-direction: row;
-        }
-
-        .title .botones {
-            display: flex;
-
-            justify-content: flex-end;
-            align-items: flex-start;
-            align-content: flex-start;
-            width: 20%;
-            flex-direction: row;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="FlexContainer">
-        <div class="modal">
-            <div class="title">
-                <div class="texto">
-                    <label>Crear productos</label>
+    <section>
+
+        <div>
+            <form>
+                <div class="title">
+                    <div class="texto">
+                        <label>Crear clientes</label>
+                    </div>
                 </div>
-                <div class="botones">
-                    <button>X</button>
+                <div class="divEISG">
+                    <div class="controlor">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="controlor">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido">
+                    </div>
                 </div>
-            </div>
+                <button class="button2" type="submit">Buscar</button>
+            </form>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marvin</td>
+                        <td>Barrera</td>
+                        <td rowspan="2">Gerentes</td>
+                        <td>
+                            <button class="button3">E</button>
+                            <button class="button4">D</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mateo</td>
+                        <td>Rivas</td>
+
+                        <td>
+                            <button class="button3">E</button>
+                            <button class="button4">D</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 </body>
